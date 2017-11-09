@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Geo</title>
+	<style>
+		@font-face {
+			font-family: "Impact";
+			src: url('css/fonts/Impact/impact.woff2') format('woff2'),
+			url('css/fonts/Impact/impact.woff') format('woff'),
+			url('css/fonts/Impact/impact.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+			font-display: optional;
+		}
+
+		.font-marketsans .impact {
+			font-family: "Impact", "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif
+		}
+	</style><!--загрузка кастомных шрифтов -->
+	<script>
+		var useCustomFont = ('fontDisplay' in document.documentElement.style) ||
+			(localStorage && localStorage.getItem('ebay-font'));
+		if (useCustomFont) {
+			document.documentElement.classList.add('font-marketsans');
+		}
+	</script><!--загрузка кастомных шрифтов -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+
+	<!--start content-->
+	<div class="content">
+		<main>
+			<!--start header-->
+			<header class="header">
+				<div class="container">
+					<div class="header__top">
+						<div class="logo">
+							<a href="#">
+								<span class="logo__top impact">Гео <span class="logo__accent">таргет</span></span></a>
+							<span class="logo__bottom">сервис георекламы</span></a>
+						</div>
+						<div class="menu js-menu">
+							<nav>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">О сервисе</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Преимущества</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Отзывы</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Тарифы</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__buttons">
+							<a href="#form" class="header__button header__button_register">Зарегистрироваться</a>
+							<a href="#" class="header__button header__button_enter">Войти</a>
+						</div>
+
+						<div class="menu-icon js-menu-icon">
+							<div class="line-1 no-animation"></div>
+							<div class="line-2 no-animation"></div>
+							<div class="line-3 no-animation"></div>
+						</div>
+					</div>
+					<div class="header__promo">
+						<h1 class="header__title">Клиенты, которые рядом с Вами</h1>
+						<div class="header__small-title">Сервис геолокационной рекламы для локального бизнеса <strong>от
+							1000 р. в месяц</strong>
+						</div>
+
+						<a href="#form" class="btn btn_header">Зарегистрироваться</a>
+					</div>
+				</div>
+			</header>
+			<!--end header-->
+
+			<!--start geo-->
+			<section class="geo">
+				<div class="container">
+					<h2 class="title">О сервисе Геотергет</h2>
+					<div class="geo__title">Реклама в основных сетях, всем, <br> кто в радиусе 500</div>
+					<div class="geo__blocks">
+						<div class="geo__block geo__block_map">
+							<picture>
+								<source srcset="images/geo.webp" type="image/webp">
+								<source srcset="images/geo.jpg" type="image/jpeg">
+								<img class="geo__pic" src="images/geo.jpg" alt="Карта">
+							</picture>
+
+						</div>
+						<div class="geo__block">
+							<div class="geo__text">
+								<p>Используйте эту возможность, чтобы выгодно представить себя и свою компанию клиентам.
+									Расскажите интересную историю, например, как вам в голову пришла идея собственного
+									дела, и объясните, в чем заключается ваше преимущество перед конкурентами.
+								</p>
+								<p>Приводите увлекательные факты и цифры. Не забудьте про ключевые слова, по которым ваш
+									сайт найдут в поисковых системах.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end geo-->
+
+			<!--start brands-->
+			<section class="brands">
+				<div class="container">
+					<h2 class="title">Быстрое подключение <br>всех систем георекламы</h2>
+					<div class="brands__row">
+						<div class="brands__col">
+							<div class="brands__item">
+								<picture>
+									<source srcset="images/brands/yandex.webp" type="image/webp">
+									<source srcset="images/brands/yandex.jpg" type="image/jpeg">
+									<img class="brands__pic" src="images/brands/yandex.png" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="brands__col">
+							<div class="brands__item">
+								<picture>
+									<source srcset="images/brands/google.webp" type="image/webp">
+									<source srcset="images/brands/google.jpg" type="image/jpeg">
+									<img class="brands__pic" src="images/brands/google.png" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="brands__col">
+							<div class="brands__item">
+								<picture>
+									<source srcset="images/brands/mail.webp" type="image/webp">
+									<source srcset="images/brands/mail.jpg" type="image/jpeg">
+									<img class="brands__pic" src="images/brands/mail.png" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="brands__col">
+							<div class="brands__item">
+								<picture>
+									<source srcset="images/brands/fb.webp" type="image/webp">
+									<source srcset="images/brands/fb.jpg" type="image/jpeg">
+									<img class="brands__pic" src="images/brands/fb.png" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="brands__col">
+							<div class="brands__item">
+								<picture>
+									<source srcset="images/brands/vk.webp" type="image/webp">
+									<source srcset="images/brands/vk.jpg" type="image/jpeg">
+									<img class="brands__pic" src="images/brands/vk.png" alt="">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end brands-->
+
+			<!--start targeting-->
+			<section class="targeting">
+				<div class="container">
+					<h2 class="title title_white">Эффективные дополнительные <br>таргетинги</h2>
+					<div class="targeting__row">
+						<div class="targeting__col">
+							<div class="targeting__item">
+								<div class="targeting__image">
+									<img data-src="images/targeting-1.png" alt="" class="targeting__pic lazyload">
+								</div>
+								<div class="targeting__desc">
+									<div class="targeting__title">Ориентация на слова</div>
+									<div class="targeting__text">
+										Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
+										чтобы добавить. свой текст и настроить шрифт. Вы можете переместить его в любое
+										место на странице.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="targeting__col">
+							<div class="targeting__item">
+								<div class="targeting__image">
+									<img data-src="images/targeting-2.png" alt="" class="targeting__pic lazyload">
+								</div>
+								<div class="targeting__desc">
+									<div class="targeting__title">Ориентация на слова</div>
+									<div class="targeting__text">
+										Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и
+										настроить шрифт.
+										Вы можете переместить его в любое место на странице.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="targeting__col">
+							<div class="targeting__item">
+								<div class="targeting__image">
+									<img data-src="images/targeting-3.png" alt="" class="targeting__pic lazyload">
+								</div>
+								<div class="targeting__desc">
+									<div class="targeting__title">Дизайн</div>
+									<div class="targeting__text">
+										Чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+										место.
+										на странице.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="targeting__col">
+							<div class="targeting__item">
+								<div class="targeting__image">
+									<img data-src="images/targeting-4.png" alt="" class="targeting__pic lazyload">
+								</div>
+								<div class="targeting__desc">
+									<div class="targeting__title">Консалтинг</div>
+									<div class="targeting__text">
+										Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды,
+										чтобы добавить. свой текст и настроить шрифт. Вы можете переместить его в любое
+										место на странице.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end targeting-->
+
+			<!-- start advantages -->
+			<section class="advantages">
+				<div class="container">
+					<h2 class="title title_big">преимущества</h2>
+					<div class="advantages__row">
+						<div class="advantages__col">
+							<div class="advantages__item">
+								<div class="advantages__image">
+									<img class="advantages__pic lazyload" data-src="images/advantages-1.png" alt="">
+								</div>
+								<div class="advantages__desc">
+									<div class="advantages__title">Никаких лишних <br> трат</div>
+									<div class="advantages__text">
+										рекламу видят только те, кому Вы хотите показываться
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="advantages__col">
+							<div class="advantages__item">
+								<div class="advantages__image">
+									<img class="advantages__pic lazyload" data-src="images/advantages-2.png" alt="">
+								</div>
+								<div class="advantages__desc">
+									<div class="advantages__title">Контролируете поток <br> клиентов</div>
+									<div class="advantages__text">
+										увеличивайте или уменьшайте траты
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="advantages__col">
+							<div class="advantages__item">
+								<div class="advantages__image">
+									<img class="advantages__pic lazyload" data-src="images/advantages-3.png" alt="">
+								</div>
+								<div class="advantages__desc">
+									<div class="advantages__title">Забирайте клиентов <br> у Ваших конкурентов</div>
+									<div class="advantages__text">
+										пометьте их на карте
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end advantages -->
+
+			<!--start reviews-->
+			<section class="reviews">
+				<div class="container">
+					<h2 class="title title_big">Отзывы клиентов</h2>
+					<div class="gallery-touch gallery-touch_reviews">
+						<div class="gallery-touch__inner">
+							<div class="gallery-touch__list js-gallery-touch__list">
+								<div class="gallery-touch__item">
+									<div class="reviews__item">
+										<div class="reviews__top">
+											<div class="reviews__image">
+												<img data-src="images/reviews-1.png" alt="Фото клиента"
+													 class="reviews__pic lazyload">
+											</div>
+											<div class="reviews__desc">
+												<div class="reviews__name">Максим Иванов</div>
+												<div class="reviews__job">Генеральный директор Автосервиса</div>
+											</div>
+										</div>
+										<div class="reviews__text">
+											Больше не надо ставить человека с рекламой у метро. Нажмите один раз и
+											выберите «Редактировать текст» или просто кликните дважды, чтобы
+											добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+											место на странице.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="reviews__item">
+										<div class="reviews__top">
+											<div class="reviews__image">
+												<img data-src="images/reviews-2.png" alt="Фото клиента"
+													 class="reviews__pic lazyload">
+											</div>
+											<div class="reviews__desc">
+												<div class="reviews__name">Елена Максимова</div>
+												<div class="reviews__job">Генеральный директор Ресторана</div>
+											</div>
+										</div>
+										<div class="reviews__text">
+											Больше не надо ставить человека с рекламой у метро. Нажмите один раз и
+											выберите «Редактировать текст» или просто кликните дважды, чтобы
+											добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+											место на странице.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="reviews__item">
+										<div class="reviews__top">
+											<div class="reviews__image">
+												<img data-src="images/reviews-1.png" alt="Фото клиента"
+													 class="reviews__pic lazyload">
+											</div>
+											<div class="reviews__desc">
+												<div class="reviews__name">Максим Иванов</div>
+												<div class="reviews__job">Генеральный директор Автосервиса</div>
+											</div>
+										</div>
+										<div class="reviews__text">
+											Больше не надо ставить человека с рекламой у метро. Нажмите один раз и
+											выберите «Редактировать текст» или просто кликните дважды, чтобы
+											добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+											место на странице.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="reviews__item">
+										<div class="reviews__top">
+											<div class="reviews__image">
+												<img data-src="images/reviews-2.png" alt="Фото клиента"
+													 class="reviews__pic lazyload">
+											</div>
+											<div class="reviews__desc">
+												<div class="reviews__name">Елена Максимова</div>
+												<div class="reviews__job">Генеральный директор Ресторана</div>
+											</div>
+										</div>
+										<div class="reviews__text">
+											Больше не надо ставить человека с рекламой у метро. Нажмите один раз и
+											выберите «Редактировать текст» или просто кликните дважды, чтобы
+											добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+											место на странице.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="reviews__item">
+										<div class="reviews__top">
+											<div class="reviews__image">
+												<img data-src="images/reviews-1.png" alt="Фото клиента"
+													 class="reviews__pic lazyload">
+											</div>
+											<div class="reviews__desc">
+												<div class="reviews__name">Максим Иванов</div>
+												<div class="reviews__job">Генеральный директор Автосервиса</div>
+											</div>
+										</div>
+										<div class="reviews__text">
+											Больше не надо ставить человека с рекламой у метро. Нажмите один раз и
+											выберите «Редактировать текст» или просто кликните дважды, чтобы
+											добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+											место на странице.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="reviews__item">
+										<div class="reviews__top">
+											<div class="reviews__image">
+												<img data-src="images/reviews-2.png" alt="Фото клиента"
+													 class="reviews__pic lazyload">
+											</div>
+											<div class="reviews__desc">
+												<div class="reviews__name">Елена Максимова</div>
+												<div class="reviews__job">Генеральный директор Ресторана</div>
+											</div>
+										</div>
+										<div class="reviews__text">
+											Больше не надо ставить человека с рекламой у метро. Нажмите один раз и
+											выберите «Редактировать текст» или просто кликните дважды, чтобы
+											добавить свой текст и настроить шрифт. Вы можете переместить его в любое
+											место на странице.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end reviews-->
+
+			<!--start works-->
+			<section class="works">
+				<div class="container">
+					<h2 class="title title_big">Как это работает</h2>
+					<div class="works__line"></div>
+					<div class="works__row">
+						<div class="works__col">
+							<div class="works__item">
+								<div class="works__title">Как это работает пункт 1</div>
+								<div class="works__text">
+									Больше не надо ставить человека с рекламой у метро. Нажмите один раз и выберите
+									«Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и
+									настроить шрифт. Вы можете переместить его в любое место на странице.
+								</div>
+							</div>
+						</div>
+						<div class="works__col">
+							<div class="works__item">
+								<div class="works__title">Как это работает пункт 2</div>
+								<div class="works__text">
+									Больше не надо ставить человека с рекламой у метро. Нажмите один раз и выберите
+									«Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и
+									настроить шрифт. Вы можете переместить его в любое место на странице.
+								</div>
+							</div>
+						</div>
+						<div class="works__col">
+							<div class="works__item">
+								<div class="works__title">Как это работает пункт 3</div>
+								<div class="works__text">
+									Больше не надо ставить человека с рекламой у метро. Нажмите один раз и выберите
+									«Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и
+									настроить шрифт. Вы можете переместить его в любое место на странице.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end works-->
+
+			<!--start case-->
+			<section class="case">
+				<div class="container">
+					<h2 class="title title_big">Кейсы</h2>
+					<div class="gallery-touch gallery-touch_case">
+						<div class="gallery-touch__inner">
+							<div class="gallery-touch__list js-gallery-touch__list">
+								<div class="gallery-touch__item">
+									<div class="case__item">
+										<div class="case__image">
+											<img data-src="images/case-1.jpg" alt="" class="case__pic lazyload">
+										</div>
+										<div class="case__title">Название кейса</div>
+										<div class="case__text">Сайт и контекстная реклама для школы танцев
+											"Dance-terra". Конверсия сайта 8%. Средняя цена нового клиента 240 рублей.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="case__item">
+										<div class="case__image">
+											<img data-src="images/case-2.jpg" alt="" class="case__pic lazyload">
+										</div>
+										<div class="case__title">Название кейса</div>
+										<div class="case__text">Сайт и контекстная реклама для школы танцев
+											"Dance-terra". Конверсия сайта 8%. Средняя цена нового клиента 240 рублей.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="case__item">
+										<div class="case__image">
+											<img data-src="images/case-1.jpg" alt="" class="case__pic lazyload">
+										</div>
+										<div class="case__title">Название кейса</div>
+										<div class="case__text">Сайт и контекстная реклама для школы танцев
+											"Dance-terra". Конверсия сайта 8%. Средняя цена нового клиента 240 рублей.
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="case__item">
+										<div class="case__image">
+											<img data-src="images/case-2.jpg" alt="" class="case__pic lazyload">
+										</div>
+										<div class="case__title">Название кейса</div>
+										<div class="case__text">Сайт и контекстная реклама для школы танцев
+											"Dance-terra". Конверсия сайта 8%. Средняя цена нового клиента 240 рублей.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end case-->
+
+			<!--start rate-->
+			<section class="rate">
+				<div class="container">
+					<h2 class="title title_white title_big">Тарифы</h2>
+					<div class="gallery-touch gallery-touch_rate">
+						<div class="gallery-touch__inner">
+							<div class="gallery-touch__list js-gallery-touch__list">
+								<div class="gallery-touch__item">
+									<div class="rate__item">
+										<div class="rate__item-inner">
+											<div class="rate__name">Базовый</div>
+											<div class="rate__price">от <strong>1000 руб.</strong> <br>в месяц</div>
+											<div class="rate__text">Приводите увлекательные факты и цифры. Не забудьте
+												про ключевые слова, по которым ваш сайт найдут в поисковых системах.
+											</div>
+											<a href="#" class="btn btn_rate">Подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="rate__item">
+										<div class="rate__item-inner">
+											<div class="rate__name">Бизнес</div>
+											<div class="rate__price">от <strong>5000 руб.</strong> <br>в месяц</div>
+											<div class="rate__text">Приводите увлекательные факты и цифры. Не забудьте
+												про
+												ключевые слова, по которым ваш сайт найдут в поисковых системах.
+											</div>
+											<a href="#" class="btn btn_rate">Подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="gallery-touch__item">
+									<div class="rate__item">
+										<div class="rate__item-inner">
+											<div class="rate__name">Бизнес</div>
+											<div class="rate__price">от <strong>5000 руб.</strong> <br>в месяц</div>
+											<div class="rate__text">Приводите увлекательные факты и цифры. Не забудьте
+												про
+												ключевые слова, по которым ваш сайт найдут в поисковых системах.
+											</div>
+											<a href="#" class="btn btn_rate">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end rate-->
+
+			<!--start join-->
+			<section class="join">
+				<div class="container">
+					<h2 class="title title_big">С нами <span>110 254 </span>пользователей. <br>Присоединяйтесь!</h2>
+					<form class="join__form" data-validate id="form">
+						<div class="join__block">
+							<input class="join__field" id="text" type="text" placeholder="Имя" required
+								   title="Пожалуйста впишите Ваше имя">
+						</div>
+						<div class="join__block">
+							<input class="join__field" id="email" type="email"
+								   pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+								   placeholder="E-mail" required title="Пожалуйста внесите корректный email">
+						</div>
+						<div class="join__block">
+							<input class="join__field" id="tel" type="tel" placeholder="Телефон" required
+								   title="Пожалуйста заполните номер">
+						</div>
+						<button type="submit" class="btn btn_join">Зарегистрироваться</button>
+					</form>
+				</div>
+			</section>
+			<!--end join-->
+
+			<!--start map-->
+			<div class="map" id="map" aria-label="Карта"></div>
+			<!--end map-->
+
+		</main>
+	</div>
+	<!--end content-->
+
+	<!--start footer-->
+	<footer class="footer" id="footer">
+		<div class="footer__phones">
+			<a class="footer__phone" href="tel:+74950000000">+7(495) 000 00 00</a>
+			<a class="footer__phone" href="tel:+78000000000">+7(800) 000 00 00</a>
+		</div>
+		<div class="footer__copyright">
+			© 2012—2017. Гео Таргет
+		</div>
+	</footer>
+	<!--end footer-->
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+<script src="js/lazyloading.js"></script>
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIyBeTfl_g4iIaUTZAjFc6obT3pl4fXhA&callback=initMap">
+</script>
+
+<script src="js/lib.js"></script>
+<script src="js/validate.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/map.js"></script>
+<script src="js/fontloader.js"></script><!--загрузка кастомных шрифтов -->
+<script src="js/modernizr-custom.js"></script><!--поддержка формата изображений webp-->
+</body>
+</html>

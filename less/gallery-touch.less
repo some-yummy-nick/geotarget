@@ -1,0 +1,372 @@
+.gallery-touch {
+	position: relative;
+	box-sizing: border-box;
+
+	&__inner {
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	&__list {
+		box-sizing: border-box;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		transform: translate3d(0, 0, 0);
+		transition: transform .3s;
+	}
+
+	&.move &__list {
+		transition: none;
+	}
+
+	&__item {
+		box-sizing: border-box;
+		margin: 0;
+		min-width: 100% / 3;
+		width: 100% / 3;
+		max-width: 100% / 3;
+	}
+
+	&__arrow {
+		box-sizing: border-box;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 500ms;
+
+		&.active {
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
+
+	&__prev,
+	&__next {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		width: 30px;
+		height: 100%;
+		cursor: pointer;
+
+		span {
+			width: 20px;
+			height: 20px;
+			border: 3px solid transparent;
+			transform: rotate(45deg);
+			box-sizing: border-box;
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+			opacity: .5;
+			transition: opacity 300ms ease;
+		}
+
+		&:hover span {
+			opacity: 1;
+		}
+	}
+
+	&__prev {
+		left: 0;
+
+		span {
+			left: 10px;
+			border-left-color: #000;
+			border-bottom-color: #000;
+
+			i {
+			}
+		}
+	}
+
+	&__next {
+		right: 0;
+
+		span {
+			right: 10px;
+			border-top-color: #000;
+			border-right-color: #000;
+
+			i {
+			}
+		}
+	}
+
+	&__nav {
+		box-sizing: border-box;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 5px;
+		text-align: center;
+		pointer-events: none;
+		transition: opacity 500ms;
+
+		&.active {
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
+
+	&__thumb {
+		box-sizing: border-box;
+		width: 30px;
+		height: 30px;
+		padding: 10px;
+		display: inline-block;
+		cursor: pointer;
+
+		&:after {
+			box-sizing: border-box;
+			height: 100%;
+			width: 100%;
+			background: #fff;
+			content: '';
+			display: block;
+			border-radius: 50%;
+			transition: background 500ms;
+		}
+
+		&.active,
+		&:hover {
+			&:after {
+				background: #c70;
+			}
+		}
+	}
+
+	&.move &__arrow,
+	&.move &__nav {
+		pointer-events: none !important;
+	}
+
+	&_reviews {
+		margin-top: 20px;
+
+		.gallery-touch__item {
+			margin: 0;
+			min-width: 100%;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.gallery-touch__arrow {
+			display: none;
+		}
+
+		.gallery-touch__nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			bottom: -40px;
+		}
+
+		.gallery-touch__thumb {
+
+			width: 6px;
+			height: 6px;
+			padding: 0;
+			margin-right: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:after {
+				background: #bbb;
+
+			}
+
+			&.active {
+				width: 15px;
+				height: 15px;
+
+				&:after {
+
+					background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX/Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz////8Q0A/lAAAAHHRSTlMAduGlW3i2HwMeaODeDbffp6oEBvrjHaZmXWdcZBhxhQAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCwgMEhzGR66BAAAAaklEQVQI11WOWRKAIAxDoyi4ISoCLrn/OdVxRMhXX5c0wKuiFBUS1SSl+rlpu56DSlf0SImsYZh5oKPIuGWJaV4iW65w9Nk8cIu83fc7jf79d0By1Ol/NbA/vPXHl09Jvor5z+BWF86nvAA0hgZ4UjLtcwAAAABJRU5ErkJggg==') no-repeat;
+				}
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			margin-top: 60px;
+
+			.gallery-touch__item {
+				margin: 0;
+				min-width: 50%;
+				width: 50%;
+				max-width: 50%;
+			}
+
+			.gallery-touch__nav{
+				bottom: -110px;
+			}
+		}
+	}
+
+	&_case,
+	&_rate {
+		margin-top: 30px;
+
+		.gallery-touch__item {
+			margin: 0;
+			min-width: 100%;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.gallery-touch__prev,
+		.gallery-touch__next {
+
+			span {
+				width: 30px;
+				height: 30px;
+				border-width: 1px;
+			}
+		}
+
+		.gallery-touch__prev {
+			left: -10px;
+		}
+
+	}
+
+	&_case {
+		.gallery-touch__prev,
+		.gallery-touch__next {
+
+			span {
+				top: 65%;
+
+			}
+		}
+
+		.gallery-touch__nav {
+			display: none;
+		}
+
+		@media (min-width: @screen-sm) {
+
+			.gallery-touch__item {
+				margin: 0;
+				min-width: 50%;
+				width: 50%;
+				max-width: 50%;
+			}
+			.gallery-touch__prev,
+			.gallery-touch__next {
+
+				span {
+					top: 50%;
+
+				}
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			margin-top: 40px;
+
+			.gallery-touch__item {
+				margin: 0;
+				min-width: 25%;
+				width: 25%;
+				max-width: 25%;
+			}
+		}
+	}
+
+	&_rate {
+
+		.gallery-touch__prev,
+		.gallery-touch__next {
+			display: none;
+
+			span {
+				top: 50%;
+
+			}
+		}
+
+		.gallery-touch__prev {
+
+			span {
+				border-left-color: #fff;
+				border-bottom-color: #fff;
+			}
+		}
+
+		.gallery-touch__next {
+
+			span {
+				border-top-color: #fff;
+				border-right-color: #fff;
+			}
+		}
+
+		.gallery-touch__nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			bottom: -40px;
+		}
+
+		.gallery-touch__thumb {
+
+			width: 6px;
+			height: 6px;
+			padding: 0;
+			margin-right: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:after {
+				background: #bbb;
+
+			}
+
+			&.active {
+				width: 15px;
+				height: 15px;
+
+				&:after {
+
+					background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEX/Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz//Pz////8Q0A/lAAAAHHRSTlMAduGlW3i2HwMeaODeDbffp6oEBvrjHaZmXWdcZBhxhQAAAAFiS0dEHesDcZEAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCwgMEhzGR66BAAAAaklEQVQI11WOWRKAIAxDoyi4ISoCLrn/OdVxRMhXX5c0wKuiFBUS1SSl+rlpu56DSlf0SImsYZh5oKPIuGWJaV4iW65w9Nk8cIu83fc7jf79d0By1Ol/NbA/vPXHl09Jvor5z+BWF86nvAA0hgZ4UjLtcwAAAABJRU5ErkJggg==') no-repeat;
+				}
+			}
+		}
+
+		@media (min-width: 768px) {
+
+			.gallery-touch__prev,
+			.gallery-touch__next {
+				display: block;
+			}
+
+			.gallery-touch__nav {
+				display: none;
+			}
+
+			.gallery-touch__item {
+				margin: 0;
+				min-width: 50%;
+				width: 50%;
+				max-width: 50%;
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			.gallery-touch__item {
+				margin: 0;
+				min-width: 100%/3;
+				width: 100%/3;
+				max-width: 100%/3;
+			}
+		}
+	}
+}

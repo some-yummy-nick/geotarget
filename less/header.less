@@ -1,0 +1,147 @@
+.header {
+	position: relative;
+	padding-top: 20px;
+	height: 520px;
+	background-image: url(../images/header-mobile.jpg);
+	background-size: cover;
+
+	@media (-webkit-min-device-pixel-ratio: 2) {
+		background-image: url(../images/header-mobile-2x.jpg);
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__buttons {
+		order: -1;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__button {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 8px 26px;
+		border-radius: 30px;
+		border: 1px solid;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px;
+
+		&_register {
+			margin-right: 20px;
+			border-color: #ff3f3f;
+			color: #ff3f3f;
+
+			&:hover {
+				border-color: #fff;
+				color: #fff;
+			}
+
+		}
+
+		&_enter {
+			color: #ffffff;
+			border: 1px solid #fff;
+
+			&:hover {
+				border-color: #ff3f3f;
+				color: #ff3f3f;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	&__small-title {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+
+	&__promo {
+		position: absolute;
+		width: 90%;
+		max-width: 500px;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		margin-top: 20px;
+		color: #ffffff;
+		text-align: center;
+	}
+
+	@media (min-width: @screen-sm) {
+		height: 600px;
+		background-image: url(../images/header-tablet.jpg);
+
+		@media (-webkit-min-device-pixel-ratio: 2) {
+			background-image: url(../images/header-tablet-2x.jpg);
+		}
+
+		padding-top: 30px;
+
+		&__buttons {
+			order: inherit;
+			width: auto;
+			margin-bottom: 0;
+		}
+
+		&__promo {
+			margin-top: 50px;
+		}
+
+		&__title {
+			font-size: 45px;
+			margin-bottom: 40px;
+		}
+
+		&__small-title {
+			font-size: 22px;
+			margin-bottom: 50px;
+		}
+	}
+
+	@media (min-width: @screen-md) {
+		height: 690px;
+		background-image: url(../images/header-desktop.jpg);
+
+		@media (-webkit-min-device-pixel-ratio: 2) {
+			background-image: url(../images/header-desktop-2x.jpg);
+		}
+	}
+}
+
+.webp {
+	.header {
+		background-image: url(../images/header-mobile.webp);
+
+		@media (min-width: @screen-sm) {
+			background-image: url(../images/header-tablet.webp);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/header-tablet-2x.webp);
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			background-image: url(../images/header-desktop.webp);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/header-desktop-2x.webp);
+			}
+		}
+	}
+}

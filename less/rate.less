@@ -1,0 +1,120 @@
+.rate {
+
+	background-image: url(../images/rate-mobile.jpg);
+	background-size: cover;
+
+	@media (-webkit-min-device-pixel-ratio: 2) {
+		background-image: url(../images/rate-mobile-2x.jpg);
+	}
+
+	&__item {
+		max-width: 320px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		&-inner {
+			padding: 52px 15px;
+
+			background: #fff;
+
+		}
+	}
+
+	&__name {
+		margin-bottom: 30px;
+		color: #888;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__price {
+		margin-bottom: 35px;
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.2;
+
+		strong {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 30px;
+	}
+
+	@media (min-width: @screen-sm) {
+
+		background-image: url(../images/rate-tablet.jpg);
+
+		@media (-webkit-min-device-pixel-ratio: 2) {
+			background-image: url(../images/rate-tablet-2x.jpg);
+		}
+
+	}
+
+	@media (min-width: 768px) {
+
+		&__item {
+			padding: 10px;
+			&-inner {
+
+			}
+
+		}
+		&__price {
+			font-size: 30px;
+
+			strong {
+				font-size: 45px;
+			}
+		}
+	}
+
+	@media (min-width: @screen-md) {
+		background-image: url(../images/rate-desktop.jpg);
+
+		@media (-webkit-min-device-pixel-ratio: 2) {
+			background-image: url(../images/rate-desktop-2x.jpg);
+		}
+
+		&__item {
+
+			&-inner {
+
+			}
+
+		}
+
+		&__price {
+			font-size: 30px;
+
+			strong {
+				font-size: 48px;
+			}
+		}
+	}
+}
+
+.webp {
+	.rate{
+		background-image: url(../images/rate-mobile.webp);
+
+		@media (min-width:  @screen-sm) {
+			background-image: url(../images/rate-tablet.webp);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/rate-tablet-2x.webp);
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			background-image: url(../images/rate-desktop.webp);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/rate-desktop-2x.webp);
+			}
+		}
+	}
+}
