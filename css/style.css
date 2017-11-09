@@ -604,7 +604,6 @@ section,
   position: relative;
   padding-top: 20px;
   height: 520px;
-  background-image: url(../images/header-mobile.jpg);
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -693,6 +692,9 @@ section,
   margin-top: 20px;
   color: #ffffff;
   text-align: center;
+}
+.no-webp .header {
+  background-image: url(../images/header-mobile.jpg);
 }
 .webp .header {
   background-image: url(../images/header-mobile.webp);
@@ -1163,7 +1165,6 @@ section,
 }
 .targeting {
   padding-bottom: 20px;
-  background-image: url(../images/targeting-mobile.jpg);
   -webkit-background-size: cover;
           background-size: cover;
   min-height: 620px;
@@ -1223,6 +1224,9 @@ section,
 }
 .targeting__desc {
   padding-left: 90px;
+}
+.no-webp .targeting {
+  background-image: url(../images/targeting-mobile.jpg);
 }
 .webp .targeting {
   background-image: url(../images/targeting-mobile.webp);
@@ -1685,7 +1689,6 @@ section,
   height: auto;
 }
 .rate {
-  background-image: url(../images/rate-mobile.jpg);
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -1717,6 +1720,9 @@ section,
 }
 .rate__text {
   margin-bottom: 30px;
+}
+.no-webp .rate {
+  background-image: url(../images/rate-mobile.jpg);
 }
 .webp .rate {
   background-image: url(../images/rate-mobile.webp);
@@ -1778,7 +1784,6 @@ section,
   }
   .header {
     height: 600px;
-    background-image: url(../images/header-tablet.jpg);
     padding-top: 30px;
   }
   .header__buttons {
@@ -1799,6 +1804,9 @@ section,
   .header__small-title {
     font-size: 22px;
     margin-bottom: 50px;
+  }
+  .no-webp .header {
+    background-image: url(../images/header-tablet.jpg);
   }
   .webp .header {
     background-image: url(../images/header-tablet.webp);
@@ -1831,9 +1839,6 @@ section,
   .brands__item {
     width: 210px;
     height: 105px;
-  }
-  .targeting {
-    background-image: url(../images/targeting-tablet.jpg);
   }
   .targeting__row {
     -webkit-box-orient: horizontal;
@@ -1872,6 +1877,9 @@ section,
   }
   .targeting__item {
     text-align: center;
+  }
+  .no-webp .targeting {
+    background-image: url(../images/targeting-tablet.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-tablet.webp);
@@ -1950,7 +1958,7 @@ section,
   .gallery-touch_case .gallery-touch__next span {
     top: 50%;
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-tablet.jpg);
   }
   .webp .rate {
@@ -1958,19 +1966,19 @@ section,
   }
 }
 @media (min-width: 555px) and (-webkit-min-device-pixel-ratio: 2) {
-  .header {
+  .no-webp .header {
     background-image: url(../images/header-tablet-2x.jpg);
   }
   .webp .header {
     background-image: url(../images/header-tablet-2x.webp);
   }
-  .targeting {
+  .no-webp .targeting {
     background-image: url(../images/targeting-tablet-2x.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-tablet-2x.webp);
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-tablet-2x.jpg);
   }
   .webp .rate {
@@ -2010,6 +2018,8 @@ section,
 @media (min-width: 1020px) {
   .header {
     height: 690px;
+  }
+  .no-webp .header {
     background-image: url(../images/header-desktop.jpg);
   }
   .webp .header {
@@ -2061,14 +2071,14 @@ section,
   .brands__item {
     margin-bottom: 0;
   }
-  .targeting {
-    background-image: url(../images/targeting-desktop.jpg);
-  }
   .targeting__item {
     margin-bottom: 0;
   }
   .targeting__col {
     width: 25%;
+  }
+  .no-webp .targeting {
+    background-image: url(../images/targeting-desktop.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-desktop.webp);
@@ -2137,33 +2147,33 @@ section,
     top: 21px;
     left: 0;
   }
-  .rate {
-    background-image: url(../images/rate-desktop.jpg);
-  }
   .rate__price {
     font-size: 30px;
   }
   .rate__price strong {
     font-size: 48px;
   }
+  .no-webp .rate {
+    background-image: url(../images/rate-desktop.jpg);
+  }
   .webp .rate {
     background-image: url(../images/rate-desktop.webp);
   }
 }
 @media (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
-  .header {
+  .no-webp .header {
     background-image: url(../images/header-desktop-2x.jpg);
   }
   .webp .header {
     background-image: url(../images/header-desktop-2x.webp);
   }
-  .targeting {
+  .no-webp .targeting {
     background-image: url(../images/targeting-desktop-2x.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-desktop-2x.webp);
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-desktop-2x.jpg);
   }
   .webp .rate {
@@ -2171,13 +2181,13 @@ section,
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
-  .header {
+  .no-webp .header {
     background-image: url(../images/header-mobile-2x.jpg);
   }
-  .targeting {
+  .no-webp .targeting {
     background-image: url(../images/targeting-mobile-2x.jpg);
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-mobile-2x.jpg);
   }
 }
