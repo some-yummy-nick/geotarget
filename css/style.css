@@ -743,6 +743,7 @@ section,
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  z-index: 10;
 }
 .menu.active {
   display: block;
@@ -773,6 +774,7 @@ section,
 }
 .menu.active .menu__link {
   color: #000000;
+  font-size: 18px;
 }
 .menu.active .menu__link:hover {
   color: #ff3f3f;
@@ -1024,7 +1026,7 @@ section,
   border: 1px solid #ff3f3f;
   font-size: 18px;
   font-weight: 700;
-  padding: 20px 30px;
+  padding: 17px 30px;
   -webkit-border-radius: 40px;
           border-radius: 40px;
   color: #ffffff;
@@ -1033,12 +1035,13 @@ section,
   padding: 10px 40px;
 }
 .btn_rate {
-  padding: 17px 55px;
+  padding: 17px 57.5px;
 }
 .btn_join {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 17px 56.5px;
 }
 .btn:hover {
   background: #fff;
@@ -1782,6 +1785,34 @@ section,
     padding-top: 64px;
     padding-bottom: 65px;
   }
+  .btn_header {
+    padding: 20px 55px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .title_big {
+    font-size: 36px;
+  }
+  .brands {
+    margin-top: -110px;
+  }
+  .brands__row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brands__col {
+    width: 33.33333333%;
+  }
+  .brands__item {
+    width: 210px;
+    height: 105px;
+  }
+}
+@media (min-width: 590px) {
   .header {
     height: 600px;
     padding-top: 30px;
@@ -1812,33 +1843,7 @@ section,
     background-image: url(../images/header-tablet.webp);
   }
   .menu.active {
-    top: 80px;
-  }
-  .btn_header {
-    padding: 20px 55px;
-  }
-  .title {
-    font-size: 30px;
-    line-height: 45px;
-  }
-  .title_big {
-    font-size: 36px;
-  }
-  .brands {
-    margin-top: -110px;
-  }
-  .brands__row {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .brands__col {
-    width: 33.33333333%;
-  }
-  .brands__item {
-    width: 210px;
-    height: 105px;
+    top: 90px;
   }
   .targeting__row {
     -webkit-box-orient: horizontal;
@@ -1932,6 +1937,7 @@ section,
   }
   .reviews__item {
     padding-left: 220px;
+    padding-bottom: 30px;
   }
   .reviews__desc {
     padding-left: 0;
@@ -1965,7 +1971,7 @@ section,
     background-image: url(../images/rate-tablet.webp);
   }
 }
-@media (min-width: 555px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width: 590px) and (-webkit-min-device-pixel-ratio: 2) {
   .no-webp .header {
     background-image: url(../images/header-tablet-2x.jpg);
   }
@@ -2071,6 +2077,9 @@ section,
   .brands__item {
     margin-bottom: 0;
   }
+  .targeting {
+    padding-bottom: 60px;
+  }
   .targeting__item {
     margin-bottom: 0;
   }
@@ -2088,6 +2097,7 @@ section,
   }
   .reviews__item {
     padding-right: 50px;
+    padding-bottom: 0;
   }
   .gallery-touch_reviews {
     margin-top: 60px;
