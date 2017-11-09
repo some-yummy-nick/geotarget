@@ -22,10 +22,10 @@
 	&__button {
 		display: inline-block;
 		vertical-align: middle;
-		padding: 8px 26px;
+		padding: 6px 22.5px;
 		border-radius: 30px;
 		border: 1px solid;
-		font-size: 14px;
+		font-size: 13px;
 		font-weight: 700;
 		line-height: 20px;
 
@@ -73,19 +73,24 @@
 		left: 50%;
 		top: 50%;
 		transform: translateX(-50%) translateY(-50%);
-		margin-top: 20px;
+		margin-top: 42px;
 		color: #ffffff;
 		text-align: center;
 	}
 
 	@media (min-width: @screen-sm) {
 		height: 600px;
-		padding-top: 30px;
+		padding-top: 16px;
 
 		&__buttons {
 			order: inherit;
 			width: auto;
 			margin-bottom: 0;
+		}
+
+		&__button{
+			padding: 8px 26px;
+			font-size: 14px;
 		}
 
 		&__promo {
@@ -111,13 +116,15 @@
 .no-webp {
 
 	.header {
-		background-image: url(../images/header-mobile.jpg);
+		@media (max-width: @screen-xs-max) {
+			background-image: url(../images/header-mobile.jpg);
 
-		@media (-webkit-min-device-pixel-ratio: 2) {
-			background-image: url(../images/header-mobile-2x.jpg);
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/header-mobile-2x.jpg);
+			}
 		}
 
-		@media (min-width: @screen-sm) {
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
 			background-image: url(../images/header-tablet.jpg);
 
 			@media (-webkit-min-device-pixel-ratio: 2) {
@@ -136,10 +143,17 @@
 }
 
 .webp {
-	.header {
-		background-image: url(../images/header-mobile.webp);
 
-		@media (min-width: @screen-sm) {
+	.header {
+		@media (max-width: @screen-xs-max) {
+			background-image: url(../images/header-mobile.webp);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/header-mobile-2x.webp);
+			}
+		}
+
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
 			background-image: url(../images/header-tablet.webp);
 
 			@media (-webkit-min-device-pixel-ratio: 2) {

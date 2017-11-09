@@ -8,7 +8,7 @@
 		margin-right: auto;
 
 		&-inner {
-			padding: 52px 15px;
+			padding: 38px 15px;
 
 			background: #fff;
 
@@ -42,11 +42,13 @@
 
 		&__item {
 			padding: 10px;
-			&-inner {
 
+			&-inner {
+				padding: 52px 15px;
 			}
 
 		}
+
 		&__price {
 			font-size: 30px;
 
@@ -71,13 +73,16 @@
 .no-webp {
 
 	.rate {
-		background-image: url(../images/rate-mobile.jpg);
 
-		@media (-webkit-min-device-pixel-ratio: 2) {
-			background-image: url(../images/rate-mobile-2x.jpg);
+		@media (max-width: @screen-xs-max) {
+			background-image: url(../images/rate-mobile.jpg);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/rate-mobile-2x.jpg);
+			}
 		}
 
-		@media (min-width: @screen-sm) {
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
 
 			background-image: url(../images/rate-tablet.jpg);
 
@@ -98,10 +103,19 @@
 }
 
 .webp {
-	.rate{
-		background-image: url(../images/rate-mobile.webp);
 
-		@media (min-width:  @screen-sm) {
+	.rate {
+
+		@media (max-width: @screen-xs-max) {
+			background-image: url(../images/rate-mobile.webp);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/rate-mobile-2x.jpg);
+			}
+
+		}
+
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
 			background-image: url(../images/rate-tablet.webp);
 
 			@media (-webkit-min-device-pixel-ratio: 2) {

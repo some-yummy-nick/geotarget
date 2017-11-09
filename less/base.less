@@ -41,8 +41,14 @@ section,
 	padding-top: 50px;
 	padding-bottom: 50px;
 
-	@media (min-width: 555px) {
-		padding-top: 64px;
+	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+		padding-top: 53px;
+		padding-bottom: 53px;
+	}
+
+
+	@media (min-width: @screen-md) {
+		padding-top: 65px;
 		padding-bottom: 65px;
 	}
 }
