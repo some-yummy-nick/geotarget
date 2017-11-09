@@ -604,7 +604,6 @@ section,
   position: relative;
   padding-top: 20px;
   height: 520px;
-  background-image: url(../images/header-mobile.jpg);
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -694,6 +693,9 @@ section,
   color: #ffffff;
   text-align: center;
 }
+.no-webp .header {
+  background-image: url(../images/header-mobile.jpg);
+}
 .webp .header {
   background-image: url(../images/header-mobile.webp);
 }
@@ -741,6 +743,7 @@ section,
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  z-index: 10;
 }
 .menu.active {
   display: block;
@@ -771,6 +774,7 @@ section,
 }
 .menu.active .menu__link {
   color: #000000;
+  font-size: 18px;
 }
 .menu.active .menu__link:hover {
   color: #ff3f3f;
@@ -1022,7 +1026,7 @@ section,
   border: 1px solid #ff3f3f;
   font-size: 18px;
   font-weight: 700;
-  padding: 20px 30px;
+  padding: 17px 30px;
   -webkit-border-radius: 40px;
           border-radius: 40px;
   color: #ffffff;
@@ -1031,12 +1035,13 @@ section,
   padding: 10px 40px;
 }
 .btn_rate {
-  padding: 17px 55px;
+  padding: 17px 57.5px;
 }
 .btn_join {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 17px 56.5px;
 }
 .btn:hover {
   background: #fff;
@@ -1163,7 +1168,6 @@ section,
 }
 .targeting {
   padding-bottom: 20px;
-  background-image: url(../images/targeting-mobile.jpg);
   -webkit-background-size: cover;
           background-size: cover;
   min-height: 620px;
@@ -1223,6 +1227,9 @@ section,
 }
 .targeting__desc {
   padding-left: 90px;
+}
+.no-webp .targeting {
+  background-image: url(../images/targeting-mobile.jpg);
 }
 .webp .targeting {
   background-image: url(../images/targeting-mobile.webp);
@@ -1685,7 +1692,6 @@ section,
   height: auto;
 }
 .rate {
-  background-image: url(../images/rate-mobile.jpg);
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -1717,6 +1723,9 @@ section,
 }
 .rate__text {
   margin-bottom: 30px;
+}
+.no-webp .rate {
+  background-image: url(../images/rate-mobile.jpg);
 }
 .webp .rate {
   background-image: url(../images/rate-mobile.webp);
@@ -1776,36 +1785,6 @@ section,
     padding-top: 64px;
     padding-bottom: 65px;
   }
-  .header {
-    height: 600px;
-    background-image: url(../images/header-tablet.jpg);
-    padding-top: 30px;
-  }
-  .header__buttons {
-    -webkit-box-ordinal-group: inherit;
-    -webkit-order: inherit;
-        -ms-flex-order: inherit;
-            order: inherit;
-    width: auto;
-    margin-bottom: 0;
-  }
-  .header__promo {
-    margin-top: 50px;
-  }
-  .header__title {
-    font-size: 45px;
-    margin-bottom: 40px;
-  }
-  .header__small-title {
-    font-size: 22px;
-    margin-bottom: 50px;
-  }
-  .webp .header {
-    background-image: url(../images/header-tablet.webp);
-  }
-  .menu.active {
-    top: 80px;
-  }
   .btn_header {
     padding: 20px 55px;
   }
@@ -1832,8 +1811,39 @@ section,
     width: 210px;
     height: 105px;
   }
-  .targeting {
-    background-image: url(../images/targeting-tablet.jpg);
+}
+@media (min-width: 590px) {
+  .header {
+    height: 600px;
+    padding-top: 30px;
+  }
+  .header__buttons {
+    -webkit-box-ordinal-group: inherit;
+    -webkit-order: inherit;
+        -ms-flex-order: inherit;
+            order: inherit;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .header__promo {
+    margin-top: 50px;
+  }
+  .header__title {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  .header__small-title {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .no-webp .header {
+    background-image: url(../images/header-tablet.jpg);
+  }
+  .webp .header {
+    background-image: url(../images/header-tablet.webp);
+  }
+  .menu.active {
+    top: 90px;
   }
   .targeting__row {
     -webkit-box-orient: horizontal;
@@ -1872,6 +1882,9 @@ section,
   }
   .targeting__item {
     text-align: center;
+  }
+  .no-webp .targeting {
+    background-image: url(../images/targeting-tablet.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-tablet.webp);
@@ -1924,6 +1937,7 @@ section,
   }
   .reviews__item {
     padding-left: 220px;
+    padding-bottom: 30px;
   }
   .reviews__desc {
     padding-left: 0;
@@ -1950,27 +1964,27 @@ section,
   .gallery-touch_case .gallery-touch__next span {
     top: 50%;
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-tablet.jpg);
   }
   .webp .rate {
     background-image: url(../images/rate-tablet.webp);
   }
 }
-@media (min-width: 555px) and (-webkit-min-device-pixel-ratio: 2) {
-  .header {
+@media (min-width: 590px) and (-webkit-min-device-pixel-ratio: 2) {
+  .no-webp .header {
     background-image: url(../images/header-tablet-2x.jpg);
   }
   .webp .header {
     background-image: url(../images/header-tablet-2x.webp);
   }
-  .targeting {
+  .no-webp .targeting {
     background-image: url(../images/targeting-tablet-2x.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-tablet-2x.webp);
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-tablet-2x.jpg);
   }
   .webp .rate {
@@ -2010,6 +2024,8 @@ section,
 @media (min-width: 1020px) {
   .header {
     height: 690px;
+  }
+  .no-webp .header {
     background-image: url(../images/header-desktop.jpg);
   }
   .webp .header {
@@ -2062,13 +2078,16 @@ section,
     margin-bottom: 0;
   }
   .targeting {
-    background-image: url(../images/targeting-desktop.jpg);
+    padding-bottom: 60px;
   }
   .targeting__item {
     margin-bottom: 0;
   }
   .targeting__col {
     width: 25%;
+  }
+  .no-webp .targeting {
+    background-image: url(../images/targeting-desktop.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-desktop.webp);
@@ -2078,6 +2097,7 @@ section,
   }
   .reviews__item {
     padding-right: 50px;
+    padding-bottom: 0;
   }
   .gallery-touch_reviews {
     margin-top: 60px;
@@ -2137,33 +2157,33 @@ section,
     top: 21px;
     left: 0;
   }
-  .rate {
-    background-image: url(../images/rate-desktop.jpg);
-  }
   .rate__price {
     font-size: 30px;
   }
   .rate__price strong {
     font-size: 48px;
   }
+  .no-webp .rate {
+    background-image: url(../images/rate-desktop.jpg);
+  }
   .webp .rate {
     background-image: url(../images/rate-desktop.webp);
   }
 }
 @media (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
-  .header {
+  .no-webp .header {
     background-image: url(../images/header-desktop-2x.jpg);
   }
   .webp .header {
     background-image: url(../images/header-desktop-2x.webp);
   }
-  .targeting {
+  .no-webp .targeting {
     background-image: url(../images/targeting-desktop-2x.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-desktop-2x.webp);
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-desktop-2x.jpg);
   }
   .webp .rate {
@@ -2171,13 +2191,13 @@ section,
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
-  .header {
+  .no-webp .header {
     background-image: url(../images/header-mobile-2x.jpg);
   }
-  .targeting {
+  .no-webp .targeting {
     background-image: url(../images/targeting-mobile-2x.jpg);
   }
-  .rate {
+  .no-webp .rate {
     background-image: url(../images/rate-mobile-2x.jpg);
   }
 }

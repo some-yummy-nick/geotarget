@@ -1,6 +1,7 @@
 .menu {
 	display: none;
 	flex-grow: 1;
+	z-index: 10;
 
 	&.active {
 		display: block;
@@ -29,6 +30,7 @@
 
 		.menu__link {
 			color: #000000;
+			font-size: 18px;
 
 			&:hover {
 				color: #ff3f3f;
@@ -56,15 +58,14 @@
 		}
 	}
 
-	@media (min-width: 555px) {
+	@media (min-width:@screen-sm) {
 
 		&.active {
-			top: 80px;
+			top: 90px;
 		}
-
 	}
 
-	@media (min-width: 1020px) {
+	@media (min-width:@screen-md) {
 		display: block;
 	}
 }

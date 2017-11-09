@@ -1,13 +1,8 @@
 .targeting {
 	padding-bottom: 20px;
-	background-image: url(../images/targeting-mobile.jpg);
 	background-size: cover;
 	min-height: 620px;
 	color: #ffffff;
-
-	@media (-webkit-min-device-pixel-ratio: 2) {
-		background-image: url(../images/targeting-mobile-2x.jpg);
-	}
 
 	&__row {
 		display: flex;
@@ -52,12 +47,6 @@
 
 	@media (min-width: @screen-sm) {
 
-		background-image: url(../images/targeting-tablet.jpg);
-
-		@media (-webkit-min-device-pixel-ratio: 2) {
-			background-image: url(../images/targeting-tablet-2x.jpg);
-		}
-
 		&__row {
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -99,12 +88,7 @@
 	}
 
 	@media (min-width: @screen-md) {
-
-		background-image: url(../images/targeting-desktop.jpg);
-
-		@media (-webkit-min-device-pixel-ratio: 2) {
-			background-image: url(../images/targeting-desktop-2x.jpg);
-		}
+		padding-bottom: 60px;
 
 		&__item {
 			margin-bottom: 0;
@@ -112,6 +96,35 @@
 
 		&__col {
 			width: 25%;
+		}
+	}
+}
+
+.no-webp {
+
+	.targeting {
+		background-image: url(../images/targeting-mobile.jpg);
+
+		@media (-webkit-min-device-pixel-ratio: 2) {
+			background-image: url(../images/targeting-mobile-2x.jpg);
+		}
+
+		@media (min-width: @screen-sm) {
+
+			background-image: url(../images/targeting-tablet.jpg);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/targeting-tablet-2x.jpg);
+			}
+		}
+
+		@media (min-width: @screen-md) {
+
+			background-image: url(../images/targeting-desktop.jpg);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/targeting-desktop-2x.jpg);
+			}
 		}
 	}
 }

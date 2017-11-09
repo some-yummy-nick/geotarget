@@ -1,11 +1,5 @@
 .rate {
-
-	background-image: url(../images/rate-mobile.jpg);
 	background-size: cover;
-
-	@media (-webkit-min-device-pixel-ratio: 2) {
-		background-image: url(../images/rate-mobile-2x.jpg);
-	}
 
 	&__item {
 		max-width: 320px;
@@ -44,16 +38,6 @@
 		margin-bottom: 30px;
 	}
 
-	@media (min-width: @screen-sm) {
-
-		background-image: url(../images/rate-tablet.jpg);
-
-		@media (-webkit-min-device-pixel-ratio: 2) {
-			background-image: url(../images/rate-tablet-2x.jpg);
-		}
-
-	}
-
 	@media (min-width: 768px) {
 
 		&__item {
@@ -73,25 +57,41 @@
 	}
 
 	@media (min-width: @screen-md) {
-		background-image: url(../images/rate-desktop.jpg);
-
-		@media (-webkit-min-device-pixel-ratio: 2) {
-			background-image: url(../images/rate-desktop-2x.jpg);
-		}
-
-		&__item {
-
-			&-inner {
-
-			}
-
-		}
 
 		&__price {
 			font-size: 30px;
 
 			strong {
 				font-size: 48px;
+			}
+		}
+	}
+}
+
+.no-webp {
+
+	.rate {
+		background-image: url(../images/rate-mobile.jpg);
+
+		@media (-webkit-min-device-pixel-ratio: 2) {
+			background-image: url(../images/rate-mobile-2x.jpg);
+		}
+
+		@media (min-width: @screen-sm) {
+
+			background-image: url(../images/rate-tablet.jpg);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/rate-tablet-2x.jpg);
+			}
+
+		}
+
+		@media (min-width: @screen-md) {
+			background-image: url(../images/rate-desktop.jpg);
+
+			@media (-webkit-min-device-pixel-ratio: 2) {
+				background-image: url(../images/rate-desktop-2x.jpg);
 			}
 		}
 	}
