@@ -643,11 +643,11 @@ section,
 .header__button {
   display: inline-block;
   vertical-align: middle;
-  padding: 8px 26px;
+  padding: 6px 22.5px;
   -webkit-border-radius: 30px;
           border-radius: 30px;
   border: 1px solid;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 20px;
 }
@@ -689,15 +689,13 @@ section,
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  margin-top: 20px;
+  margin-top: 42px;
   color: #ffffff;
   text-align: center;
 }
-.no-webp .header {
-  background-image: url(../images/header-mobile.jpg);
-}
-.webp .header {
-  background-image: url(../images/header-mobile.webp);
+.logo a {
+  display: inline-block;
+  padding-top: 9px;
 }
 .logo__top {
   position: relative;
@@ -1063,7 +1061,6 @@ section,
   color: #ff3f3f;
 }
 .geo__title {
-  margin-bottom: 30px;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -1220,19 +1217,13 @@ section,
   height: auto;
 }
 .targeting__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 .targeting__desc {
   padding-left: 90px;
-}
-.no-webp .targeting {
-  background-image: url(../images/targeting-mobile.jpg);
-}
-.webp .targeting {
-  background-image: url(../images/targeting-mobile.webp);
 }
 .advantages {
   background-color: #f9f9f9;
@@ -1282,7 +1273,7 @@ section,
   padding-left: 80px;
 }
 .advantages__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -1670,7 +1661,7 @@ section,
 }
 .works__title {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1702,7 +1693,7 @@ section,
   margin-right: auto;
 }
 .rate__item-inner {
-  padding: 52px 15px;
+  padding: 38px 15px;
   background: #fff;
 }
 .rate__name {
@@ -1724,12 +1715,6 @@ section,
 .rate__text {
   margin-bottom: 30px;
 }
-.no-webp .rate {
-  background-image: url(../images/rate-mobile.jpg);
-}
-.webp .rate {
-  background-image: url(../images/rate-mobile.webp);
-}
 .join__form {
   max-width: 520px;
   margin-left: auto;
@@ -1750,7 +1735,6 @@ section,
 }
 .map {
   height: 470px;
-  position: relative;
 }
 .error {
   border-color: orange;
@@ -1780,61 +1764,15 @@ section,
   padding-right: 20px;
 }
 @media (min-width: 555px) {
-  section,
-  .section {
-    padding-top: 64px;
-    padding-bottom: 65px;
-  }
   .btn_header {
     padding: 20px 55px;
   }
-  .title {
-    font-size: 30px;
-    line-height: 45px;
-  }
-  .title_big {
-    font-size: 36px;
-  }
-  .brands {
-    margin-top: -110px;
-  }
-  .brands__row {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .brands__col {
-    width: 33.33333333%;
-  }
-  .brands__item {
-    width: 210px;
-    height: 105px;
-  }
 }
-@media (min-width: 590px) {
-  .header {
-    height: 600px;
-    padding-top: 30px;
-  }
-  .header__buttons {
-    -webkit-box-ordinal-group: inherit;
-    -webkit-order: inherit;
-        -ms-flex-order: inherit;
-            order: inherit;
-    width: auto;
-    margin-bottom: 0;
-  }
-  .header__promo {
-    margin-top: 50px;
-  }
-  .header__title {
-    font-size: 45px;
-    margin-bottom: 40px;
-  }
-  .header__small-title {
-    font-size: 22px;
-    margin-bottom: 50px;
+@media (min-width: 590px) and (max-width: 1019px) {
+  section,
+  .section {
+    padding-top: 53px;
+    padding-bottom: 53px;
   }
   .no-webp .header {
     background-image: url(../images/header-tablet.jpg);
@@ -1845,95 +1783,18 @@ section,
   .menu.active {
     top: 90px;
   }
-  .targeting__row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-top: 84px;
+  .title {
+    font-size: 30px;
+    line-height: 45px;
   }
-  .targeting__col {
-    width: 50%;
-    padding: 0 15px;
-  }
-  .targeting__image {
-    float: none;
-    width: 143px;
-    height: 143px;
-    margin-right: auto;
-    margin-bottom: 34px;
-  }
-  .targeting__pic {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .targeting__desc {
-    padding-left: 0;
-  }
-  .targeting__title {
-    margin-bottom: 20px;
-  }
-  .targeting__item {
-    text-align: center;
+  .title_big {
+    font-size: 36px;
   }
   .no-webp .targeting {
     background-image: url(../images/targeting-tablet.jpg);
   }
   .webp .targeting {
     background-image: url(../images/targeting-tablet.webp);
-  }
-  .advantages__row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-top: 54px;
-  }
-  .advantages__image {
-    min-height: 70px;
-    float: none;
-    margin-bottom: 20px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .advantages__pic {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .advantages__desc {
-    padding-left: 0;
-    text-align: center;
-  }
-  .advantages__col {
-    width: 50%;
-    padding: 0 15px;
   }
   .reviews__item {
     padding-left: 220px;
@@ -1964,6 +1825,9 @@ section,
   .gallery-touch_case .gallery-touch__next span {
     top: 50%;
   }
+  .works__title {
+    font-size: 18px;
+  }
   .no-webp .rate {
     background-image: url(../images/rate-tablet.jpg);
   }
@@ -1971,7 +1835,142 @@ section,
     background-image: url(../images/rate-tablet.webp);
   }
 }
-@media (min-width: 590px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width: 590px) {
+  .header {
+    height: 600px;
+    padding-top: 16px;
+  }
+  .header__buttons {
+    -webkit-box-ordinal-group: inherit;
+    -webkit-order: inherit;
+        -ms-flex-order: inherit;
+            order: inherit;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .header__button {
+    padding: 8px 26px;
+    font-size: 14px;
+  }
+  .header__promo {
+    margin-top: 50px;
+  }
+  .header__title {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  .header__small-title {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .brands {
+    margin-top: -110px;
+  }
+  .brands__row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brands__col {
+    width: 33.33333333%;
+  }
+  .brands__item {
+    width: 210px;
+    height: 105px;
+  }
+  .targeting__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 84px;
+  }
+  .targeting__col {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .targeting__title {
+    font-size: 20px;
+  }
+  .targeting__image {
+    float: none;
+    width: 143px;
+    height: 143px;
+    margin-right: auto;
+    margin-bottom: 34px;
+  }
+  .targeting__pic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .targeting__desc {
+    padding-left: 0;
+  }
+  .targeting__title {
+    margin-bottom: 20px;
+  }
+  .targeting__item {
+    text-align: center;
+  }
+  .advantages__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 54px;
+  }
+  .advantages__title {
+    font-size: 20px;
+  }
+  .advantages__image {
+    min-height: 70px;
+    float: none;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages__pic {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advantages__desc {
+    padding-left: 0;
+    text-align: center;
+  }
+  .advantages__col {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 590px) and (max-width: 1019px) and (-webkit-min-device-pixel-ratio: 2) {
   .no-webp .header {
     background-image: url(../images/header-tablet-2x.jpg);
   }
@@ -2014,6 +2013,9 @@ section,
   .rate__item {
     padding: 10px;
   }
+  .rate__item-inner {
+    padding: 52px 15px;
+  }
   .rate__price {
     font-size: 30px;
   }
@@ -2022,6 +2024,11 @@ section,
   }
 }
 @media (min-width: 1020px) {
+  section,
+  .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
   .header {
     height: 690px;
   }
@@ -2190,14 +2197,43 @@ section,
     background-image: url(../images/rate-desktop-2x.webp);
   }
 }
-@media (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 589px) {
+  .no-webp .header {
+    background-image: url(../images/header-mobile.jpg);
+  }
+  .webp .header {
+    background-image: url(../images/header-mobile.webp);
+  }
+  .no-webp .targeting {
+    background-image: url(../images/targeting-mobile.jpg);
+  }
+  .webp .targeting {
+    background-image: url(../images/targeting-mobile.webp);
+  }
+  .no-webp .rate {
+    background-image: url(../images/rate-mobile.jpg);
+  }
+  .webp .rate {
+    background-image: url(../images/rate-mobile.webp);
+  }
+}
+@media (max-width: 589px) and (-webkit-min-device-pixel-ratio: 2) {
   .no-webp .header {
     background-image: url(../images/header-mobile-2x.jpg);
+  }
+  .webp .header {
+    background-image: url(../images/header-mobile-2x.webp);
   }
   .no-webp .targeting {
     background-image: url(../images/targeting-mobile-2x.jpg);
   }
+  .webp .targeting {
+    background-image: url(../images/targeting-mobile-2x.webp);
+  }
   .no-webp .rate {
+    background-image: url(../images/rate-mobile-2x.jpg);
+  }
+  .webp .rate {
     background-image: url(../images/rate-mobile-2x.jpg);
   }
 }
