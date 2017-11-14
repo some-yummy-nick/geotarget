@@ -28,12 +28,23 @@
 		align-items: center;
 		justify-content: center;
 		border: 1px solid #cbcbcb;
+
+		&:hover{
+
+			.brands__pic{
+				filter: grayscale(0);
+			}
+
+		}
 	}
 
 	&__pic {
 		display: block;
 		max-width: 100%;
 		height: auto;
+		filter: grayscale(100%);
+
+
 	}
 
 	@media (min-width: @screen-sm) {

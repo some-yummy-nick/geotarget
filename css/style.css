@@ -1158,10 +1158,16 @@ section,
           justify-content: center;
   border: 1px solid #cbcbcb;
 }
+.brands__item:hover .brands__pic {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
 .brands__pic {
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 .targeting {
   padding-bottom: 20px;
